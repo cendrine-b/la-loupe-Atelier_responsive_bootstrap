@@ -1,0 +1,33 @@
+/*[class*="col-"] {
+  border: 2px solid black;
+}*/
+
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+#logo {
+  font-family: monospace;
+  font-size: 2em;
+}
+
+#logo img {
+  max-height: 60px;
+}
+
+#menu {
+  /*border: 2px solid black;*/
+  font-weight: bold;
+}
+
+.carousel-inner {
+  margin-top: 60px;
+  max-height: 100vh;
+}
+.carousel-inner img {
+  width: 100%;
+}
