@@ -4,12 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MySocks</title>
-    <link href="bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <link href="atelier-bootstrap.css" rel="stylesheet">
   </head>
   <body>
 
-    <div id="wrap">
+  <div id="wrap">
 
     <!-- //////////// NAVBAR //////////// -->
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -24,7 +27,7 @@
             <span class="icon-bar"></span>
           </button>
           <!-- //////////// BRAND //////////// -->
-          <a class="navbar-brand" href="#">MySocks</a>
+          <a class="navbar-brand" href="#"><img src="noun_728500_cc.png">MySocks</a>
         </div>
         <!-- //////////// COLLECT nav links for toggling //////////// -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -34,7 +37,9 @@
             <li><a href="#">Children</a></li>
             <li>
               <a href="#">
-                <button type="button" class="btn btn-primary btn-sm">Basket</button>
+                <button type="button" class="btn btn-default btn-xs">
+                  <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+                </button>
               </a>
             </li>
           </ul>
@@ -79,110 +84,302 @@
     <!-- //////////// THUMBNAIL GALLERY //////////// -->
     <section id="gallery">
       <div class="row">
+        <!-- //////////// THUMBNAIL 1 //////////// -->
         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" >
-          <div class="thumbnail">
-            <a href="#">
-              <img src="http://www.fangcansports.com/photo/pl5208641-men_s_sports_socks_terry_background_breathe_freely_wear_well_socks.jpg"
+          <a class="thumbnail" href="#" data-toggle="modal" data-target="#modal1">
+              <img class="img-responsive" src="http://www.fangcansports.com/photo/pl5208641-men_s_sports_socks_terry_background_breathe_freely_wear_well_socks.jpg"
               alt="Black and white sock">
               <div class="caption">
                 <h3>Black & white</h3>
               </div>
-            </a>
-          </div>
+          </a>
         </div>
+        <!-- //////////// THUMBNAIL 2 //////////// -->
         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" >
-          <div class="thumbnail">
-            <a href="#">
-              <img src="https://www.citygear.com/media/catalog/product/cache/1/image/800x/9df78eab33525d08d6e5fb8d27136e95/0/2/02.03_stance-ready-to-die-sock-white-m545a16rea_3__1.jpg"
+            <a class="thumbnail" href="#" data-toggle="modal" data-target="#modal2">
+              <img class="img-responsive" src="https://www.citygear.com/media/catalog/product/cache/1/image/800x/9df78eab33525d08d6e5fb8d27136e95/0/2/02.03_stance-ready-to-die-sock-white-m545a16rea_3__1.jpg"
               alt="Black, blue, red and white sock with photograph of a child">
               <div class="caption">
                 <h3>Kiddo</h3>
               </div>
             </a>
-          </div>
         </div>
+        <!-- //////////// THUMBNAIL 3 //////////// -->
         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" >
-          <div class="thumbnail">
-            <a href="#">
-              <img src="https://www.citygear.com/media/catalog/product/cache/1/image/800x/9df78eab33525d08d6e5fb8d27136e95/1/2/12.22_122614_r.sole-weed-sock-grey-_-white-36-right-side_1.jpg"
-              alt="Grey and white sock with leaf pattern">
-              <div class="caption">
-                <h3>Leaf pattern</h3>
-              </div>
-            </a>
-          </div>
+          <a class="thumbnail" href="#" data-toggle="modal" data-target="#modal3">
+            <img class="img-responsive" src="https://www.citygear.com/media/catalog/product/cache/1/image/800x/9df78eab33525d08d6e5fb8d27136e95/1/2/12.22_122614_r.sole-weed-sock-grey-_-white-36-right-side_1.jpg"
+            alt="Grey and white sock with leaf pattern">
+            <div class="caption">
+              <h3>Leaf pattern</h3>
+            </div>
+          </a>
         </div>
+        <!-- //////////// THUMBNAIL 4 //////////// -->
         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" >
-          <div class="thumbnail">
-            <a href="#">
-              <img src="https://blog.jiji.ng/wp-content/uploads/2016/07/United-Legwear_Sketchers-12-pack-boys-socks_Multi-White.jpg"
-              alt="Six sport's socks, two colors each">
-              <div class="caption">
-                <h3>Kids sport's socks</h3>
-              </div>
-            </a>
-          </div>
+          <a class="thumbnail" href="#" data-toggle="modal" data-target="#modal4">
+            <img class="img-responsive" src="https://blog.jiji.ng/wp-content/uploads/2016/07/United-Legwear_Sketchers-12-pack-boys-socks_Multi-White.jpg"
+            alt="Six sport's socks, two colors each">
+            <div class="caption">
+              <h3>Kids sport's socks</h3>
+            </div>
+          </a>
         </div>
+        <!-- //////////// THUMBNAIL 5 //////////// -->
         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" >
-          <div class="thumbnail">
-            <a href="#">
-              <img src="http://g03.a.alicdn.com/kf/HTB1V9gaMpXXXXXIXXXXq6xXFXXXi/3D-Animal-font-b-White-b-font-Little-Cat-Printed-font-b-sock-b-font-Men.jpg"
-              alt="Black socks with photograph of a white cat">
-              <div class="caption">
-                <h3>White cat</h3>
-              </div>
-            </a>
-          </div>
+          <a class="thumbnail" href="#" data-toggle="modal" data-target="#modal5">
+            <img class="img-responsive" src="http://g03.a.alicdn.com/kf/HTB1V9gaMpXXXXXIXXXXq6xXFXXXi/3D-Animal-font-b-White-b-font-Little-Cat-Printed-font-b-sock-b-font-Men.jpg"
+            alt="Black socks with photograph of a white cat">
+            <div class="caption">
+              <h3>White cat</h3>
+            </div>
+          </a>
         </div>
+        <!-- //////////// THUMBNAIL 6 //////////// -->
         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" >
-          <div class="thumbnail">
-            <a href="#">
-              <img src="http://g04.a.alicdn.com/kf/HTB1BjTiMpXXXXaKXVXXq6xXFXXXs/-font-b-White-b-font-Bottom-Small-Milk-Cat-2016-Cute-Lovely-3D-Printed-Women.jpg"
-              alt="White sock with photograph of a kitten">
-              <div class="caption">
-                <h3>Kitten</h3>
-              </div>
-            </a>
-          </div>
+          <a class="thumbnail" href="#" data-toggle="modal" data-target="#modal6">
+            <img class="img-responsive" src="http://g04.a.alicdn.com/kf/HTB1BjTiMpXXXXaKXVXXq6xXFXXXs/-font-b-White-b-font-Bottom-Small-Milk-Cat-2016-Cute-Lovely-3D-Printed-Women.jpg"
+            alt="White sock with photograph of a kitten">
+            <div class="caption">
+              <h3>Kitten</h3>
+            </div>
+          </a>
         </div>
+        <!-- //////////// THUMBNAIL 7 //////////// -->
         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" >
-          <div class="thumbnail">
-            <a href="#">
-              <img src="https://ae01.alicdn.com/kf/HTB1WSX6NXXXXXa_XFXXq6xXFXXXm/NEW-font-b-Socks-b-font-Women-New-Unisex-Cute-Low-Cut-font-b-Ankle-b.jpg"
-              alt="White socks with Pokeball">
-              <div class="caption">
-                <h3>Pokemon</h3>
-              </div>
-            </a>
-          </div>
+          <a class="thumbnail" href="#" data-toggle="modal" data-target="#modal7">
+            <img class="img-responsive" src="https://ae01.alicdn.com/kf/HTB1WSX6NXXXXXa_XFXXq6xXFXXXm/NEW-font-b-Socks-b-font-Women-New-Unisex-Cute-Low-Cut-font-b-Ankle-b.jpg"
+            alt="White socks with Pokeball">
+            <div class="caption">
+              <h3>Pokemon</h3>
+            </div>
+          </a>
         </div>
+        <!-- //////////// THUMBNAIL 8 //////////// -->
         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" >
-          <div class="thumbnail">
-            <a href="#">
-              <img src="http://g03.a.alicdn.com/kf/HTB1dZKQOpXXXXaOXXXXq6xXFXXXX/New-2016-Women-font-b-Sock-b-font-Winter-Warm-Christmas-Gifts-Stereo-font-b-Socks.jpg"
-              alt="Three christmas themed socks with bears, red, brown and white">
-              <div class="caption">
-                <h3>Kids' Christmas</h3>
-              </div>
-            </a>
-          </div>
+          <a class="thumbnail" href="#" data-toggle="modal" data-target="#modal8">
+            <img class="img-responsive" src="http://g03.a.alicdn.com/kf/HTB1dZKQOpXXXXaOXXXXq6xXFXXXX/New-2016-Women-font-b-Sock-b-font-Winter-Warm-Christmas-Gifts-Stereo-font-b-Socks.jpg"
+            alt="Three christmas themed socks with bears, red, brown and white">
+            <div class="caption">
+              <h3>Kids' Christmas</h3>
+            </div>
+          </a>
         </div>
       </div>
     </section>
 
+    <!-- //////////// MODAL //////////// -->
+      <!-- //////////// MODAL 1 //////////// -->
+      <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+              <h3 class="modal-title" id="image-gallery-title">Black & white</h3>
+            </div>
+            <div class="modal-body">
+              <img id="image-gallery-image" class="img-responsive" src="http://www.fangcansports.com/photo/pl5208641-men_s_sports_socks_terry_background_breathe_freely_wear_well_socks.jpg">
+            </div>
+            <div class="modal-footer">
+              <div class="col-md-8" id="image-gallery-caption">
+                <p>Laborum aliquip amet qui proident occaecat et dolor ullamco culpa occaecat.</p>
+              </div>
+              <button type="button" class="btn btn-default btn-lg">
+                <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //////////// MODAL 2 //////////// -->
+      <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+              <h3 class="modal-title" id="image-gallery-title">Kiddo</h3>
+            </div>
+            <div class="modal-body">
+              <img id="image-gallery-image" class="img-responsive" src="https://www.citygear.com/media/catalog/product/cache/1/image/800x/9df78eab33525d08d6e5fb8d27136e95/0/2/02.03_stance-ready-to-die-sock-white-m545a16rea_3__1.jpg">
+            </div>
+            <div class="modal-footer">
+              <div class="col-md-8" id="image-gallery-caption">
+                <p>Esse incididunt ipsum et non cupidatat culpa id commodo Lorem fugiat minim aliquip excepteur dolore.</p>
+              </div>
+              <button type="button" class="btn btn-default btn-lg">
+                <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //////////// MODAL 3 //////////// -->
+      <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+              <h3 class="modal-title" id="image-gallery-title">Leaf pattern</h3>
+            </div>
+            <div class="modal-body">
+              <img id="image-gallery-image" class="img-responsive" src="https://www.citygear.com/media/catalog/product/cache/1/image/800x/9df78eab33525d08d6e5fb8d27136e95/1/2/12.22_122614_r.sole-weed-sock-grey-_-white-36-right-side_1.jpg">
+            </div>
+            <div class="modal-footer">
+              <div class="col-md-8" id="image-gallery-caption">
+                <p>Consectetur minim tempor pariatur incididunt cupidatat non reprehenderit quis tempor officia elit amet ullamco nulla.</p>
+              </div>
+              <button type="button" class="btn btn-default btn-lg">
+                <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //////////// MODAL 4 //////////// -->
+      <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+              <h3 class="modal-title" id="image-gallery-title">Kids sport's socks</h3>
+            </div>
+            <div class="modal-body">
+              <img id="image-gallery-image" class="img-responsive" src="https://blog.jiji.ng/wp-content/uploads/2016/07/United-Legwear_Sketchers-12-pack-boys-socks_Multi-White.jpg">
+            </div>
+            <div class="modal-footer">
+              <div class="col-md-8" id="image-gallery-caption">
+                <p>Sint culpa amet cupidatat est aute quis est.</p>
+              </div>
+              <button type="button" class="btn btn-default btn-lg">
+                <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //////////// MODAL 5 //////////// -->
+      <div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+              <h3 class="modal-title" id="image-gallery-title">White cat</h3>
+            </div>
+            <div class="modal-body">
+              <img id="image-gallery-image" class="img-responsive" src="http://g03.a.alicdn.com/kf/HTB1V9gaMpXXXXXIXXXXq6xXFXXXi/3D-Animal-font-b-White-b-font-Little-Cat-Printed-font-b-sock-b-font-Men.jpg">
+            </div>
+            <div class="modal-footer">
+              <div class="col-md-8" id="image-gallery-caption">
+                <p>Exercitation cillum excepteur sit consectetur proident sit id dolore dolore et.</p>
+              </div>
+              <button type="button" class="btn btn-default btn-lg">
+                <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //////////// MODAL 6 //////////// -->
+      <div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+              <h3 class="modal-title" id="image-gallery-title">Kitten</h3>
+            </div>
+            <div class="modal-body">
+              <img id="image-gallery-image" class="img-responsive" src="http://g04.a.alicdn.com/kf/HTB1BjTiMpXXXXaKXVXXq6xXFXXXs/-font-b-White-b-font-Bottom-Small-Milk-Cat-2016-Cute-Lovely-3D-Printed-Women.jpg">
+            </div>
+            <div class="modal-footer">
+              <div class="col-md-8" id="image-gallery-caption">
+                <p>In tempor commodo laborum officia excepteur et excepteur in reprehenderit et.</p>
+              </div>
+              <button type="button" class="btn btn-default btn-lg">
+                <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //////////// MODAL 7 //////////// -->
+      <div class="modal fade" id="modal7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+              <h3 class="modal-title" id="image-gallery-title">Pokemon</h3>
+            </div>
+            <div class="modal-body">
+              <img id="image-gallery-image" class="img-responsive" src="https://ae01.alicdn.com/kf/HTB1WSX6NXXXXXa_XFXXq6xXFXXXm/NEW-font-b-Socks-b-font-Women-New-Unisex-Cute-Low-Cut-font-b-Ankle-b.jpg">
+            </div>
+            <div class="modal-footer">
+              <div class="col-md-8" id="image-gallery-caption">
+                <p>Ex ut labore esse proident dolor enim ea id cupidatat dolore mollit officia.</p>
+              </div>
+              <button type="button" class="btn btn-default btn-lg">
+                <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //////////// MODAL 8 //////////// -->
+      <div class="modal fade" id="modal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+              <h3 class="modal-title" id="image-gallery-title">Kids' Christmas</h3>
+            </div>
+            <div class="modal-body">
+              <img id="image-gallery-image" class="img-responsive" src="http://g03.a.alicdn.com/kf/HTB1dZKQOpXXXXaOXXXXq6xXFXXXX/New-2016-Women-font-b-Sock-b-font-Winter-Warm-Christmas-Gifts-Stereo-font-b-Socks.jpg">
+            </div>
+            <div class="modal-footer">
+              <div class="col-md-8" id="image-gallery-caption">
+                <p>Quis nostrud nulla proident cupidatat consequat ea nulla Lorem aute ea cupidatat aute aute aliquip duis.</p>
+              </div>
+              <button type="button" class="btn btn-default btn-lg">
+                <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
 
     <!-- //////////// FOOTER //////////// -->
     <footer>
       <div class="container">
-        <p class="muted credit">
-          © MySocks Company. All rights reserved.
-        </p>
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <h3>About</h3>
+            <p>Id culpa reprehenderit proident consequat do laborum quis nisi sit exercitation magna incididunt. Voluptate et do magna eiusmod minim eu mollit irure non voluptate sint incididunt adipisicing fugiat velit. Incididunt non aliquip cillum qui anim officia ex cupidatat do in.</p>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <h3>Contact</h3>
+            <p>hello@mysocks.com</p>
+            <p>+330 00 00 00 00</p>
+            <p>MySocks <br />
+              238 B, Feet street <br />
+              London WC2N 5DN, UK</p>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <div class="social-icons">
+                <a href=""><i class="fa fa-facebook-official fa-2x"></i></a>
+                <a href=""><i class="fa fa-twitter fa-2x"></i></a>
+                <a href=""><i class="fa fa-instagram fa-2x"></i></a>
+                <a href=""><i class="fa fa-youtube-play fa-2x"></i></a>
+            </div>
+            <h3>Credits</h3>
+            <p>
+              © MySocks Company. All rights reserved. <br />
+              Sock icon created by Ian Porrat, from <a href="https://thenounproject.com/">Noun Project.</a> <br />
+              Glyphs by <a href="http://glyphicons.com/">Glyphicons</a>
+            </p>
+          </div>
+        </div>
       </div>
     </footer>
 
-    </div>
+  </div>
 
-    <script src="jquery.js"></script>
-    <script src="bootstrap.js"></script>
   </body>
 </html>
